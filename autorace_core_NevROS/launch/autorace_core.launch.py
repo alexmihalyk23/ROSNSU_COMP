@@ -91,14 +91,14 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        gz_sim,
-        DeclareLaunchArgument('rviz', default_value='true',
-                              description='Open RViz.'),
-        bridge,
-        robot_state_publisher,
-        rviz,
-        TimerAction(
-            period=0.0,
-            actions=[create]),
+        # gz_sim,
+        # DeclareLaunchArgument('rviz', default_value='true',
+        #                       description='Open RViz.'),
+        # bridge,
+        # robot_state_publisher,
+        # rviz,
+        # TimerAction(
+        #     period=0.0,
+        #     actions=[create]),
         robot_control_node  # Добавляем узел управления роботом
     ])

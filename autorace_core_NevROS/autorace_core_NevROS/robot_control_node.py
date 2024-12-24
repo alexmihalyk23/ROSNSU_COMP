@@ -17,7 +17,7 @@ from collections import deque
 
 class RobotControlNode(Node):
     def __init__(self):
-        super().__init__('robot_control_node')
+        super().__init__('autorace_core_NevROS')
         
         # Подписка на топик с изображением
         self.subscription = self.create_subscription(
@@ -69,7 +69,7 @@ class RobotControlNode(Node):
         self.finish = False
         
         # Загрузка модели YOLO
-        package_name = 'robot_comp_test'
+        package_name = 'autorace_core_NevROS'
         package_share_dir = get_package_share_directory(package_name)
         weights_path = os.path.join(package_share_dir, 'weights', 'ros.pt')
         self.model = YOLO(weights_path)

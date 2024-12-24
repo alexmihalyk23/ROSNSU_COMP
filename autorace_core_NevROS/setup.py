@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'robot_comp_test'
+package_name = 'autorace_core_NevROS'
 
 setup(
     name=package_name,
@@ -24,9 +24,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'robot_control_node = robot_comp_test.robot_control_node:main',
-        'task_action_server = robot_comp_test.task_action_server:main',
-        'task_action_client = robot_comp_test.task_action_client:main',
+        'robot_control_node = autorace_core_NevROS.robot_control_node:main',
+        'task_action_server = autorace_core_NevROS.task_action_server:main',
+        'task_action_client = autorace_core_NevROS.task_action_client:main',
         ],
     },
 )
