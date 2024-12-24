@@ -81,7 +81,7 @@ def generate_launch_description():
 
     # Node for controlling the robot based on depth camera data
     robot_control_node = Node(
-        package='robot_comp_test',  # Замените на ваш пакет
+        package='autorace_core_NevROS',  # Замените на ваш пакет
         executable='robot_control_node',  # Замените на ваш исполняемый файл
         name='robot_control_node',
         output='screen',
