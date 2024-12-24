@@ -1,0 +1,10 @@
+# Task.action
+
+# Goal
+int8 task_type
+---
+# Result
+bool success
+---
+# Feedback
+float32 progress
