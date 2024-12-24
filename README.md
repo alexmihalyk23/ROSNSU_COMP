@@ -12,4 +12,4 @@ pip3 install transforms3d --upgrade
 ![image](https://github.com/user-attachments/assets/105a402a-4af9-40b6-9915-49d1926323cd)
 
 ## Запуск
-`ros2 run robot_comp_test robot_control_node --ros-args -p use_sim_time:=True`
+`ros2 launch autorace_core_NevROS autorace_core.launch.py`
